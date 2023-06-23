@@ -2,8 +2,8 @@ import {
   InputSearch,
   Search,
   SearchContainer,
-} from "../search/style-search-games";
-import { ISearchGames } from "../../interfaces/ISearch-games";
+} from "./style-search-games";
+import { ISearchGames } from "../../../interfaces/ISearch-games";
 
 export const SearchGames = (props: ISearchGames) => {
   return (
