@@ -18,7 +18,7 @@ export const LoadingDiv = styled.div`
   animation: ${Rotate} 1s infinite;
   border: 6px solid #e5e5e5;
   border-radius: 50%;
-  border-top-color: #51d4db;
+  border-top-color: rgb(172, 0, 0);
   height: 100px;
   width: 100px;
   z-index: 2;

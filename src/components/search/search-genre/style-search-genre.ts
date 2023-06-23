@@ -4,20 +4,20 @@ export const ContainerOption = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 10px;
 `;
 
 export const OptionSelect = styled.select`
+  height: 40px;
   font-size: 18px;
   color: rgb(60, 60, 60);
-  border: 1px solid rgb(37, 150, 190);
+  border: 1px solid rgb(172, 0, 0);
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+  text-align: center;
 `;
 
 export const Options = styled.option`
-  background-color: rgba(37, 150, 190, 1.9);
   text-align: center;
+  background-color: rgba(172, 0, 0, 0.6);
 `;

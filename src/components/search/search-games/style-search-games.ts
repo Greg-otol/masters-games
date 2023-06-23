@@ -4,12 +4,17 @@ import search from "../../../assets/img/search.png";
 export const SearchContainer = styled.div`
   display: flex;
   justify-content: center;
+  width: 50%;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `;
 
 export const Search = styled.div`
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 100%;
 
   @media (max-width: 700px) {
     width: 100%;
@@ -24,9 +29,10 @@ export const InputSearch = styled.input`
 
   display: flex;
   width: 100%;
+  height: 40px;
   padding: 10px;
-  margin: 10px;
+  font-size: 18px;
   outline: none;
   border-radius: 5px;
-  border: 1px solid rgb(37, 150, 190);
+  border: 1px solid rgb(172, 0, 0);
 `;
