@@ -1,8 +1,8 @@
-import { HeaderContainer, HeaderH1 } from "./style-header";
+import { HeaderContainer, HeaderH1 } from "./styleHeader";
 
 export function Header() {
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { CopyRight } from "../footer/style-footer";
+import { CopyRight } from "./styleFooter";
 
 export const Footer: React.FC = () => {
   return (

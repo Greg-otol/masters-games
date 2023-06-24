@@ -1,4 +1,4 @@
-import { LoadingContainer, LoadingDiv } from "../loading/style-loading";
+import { LoadingContainer, LoadingDiv } from "./styleLoading";
 
 export const Loading = () => {
   return (
