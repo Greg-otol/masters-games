@@ -10,7 +10,7 @@ import {
   Title,
 } from "./styleHome";
 import { useEffect, useRef, useState } from "react";
-import { gamesGetAll } from "../../services/servicesGames/getAllGames";
+import { getAllGames } from "../../services/servicesGames/getAllGames";
 import { IGames } from "../../interfaces/IGames";
 import { Loading } from "../../components/loading/loading";
 import { SearchGames } from "../../components/search/searchGames/searchGames";
@@ -34,7 +34,7 @@ export function Home() {
           navigate("/server-time-exceeded");
         }, 5000);
 
-        const response = await gamesGetAll();
+        const response = await getAllGames();
         setGames(response.data);
         setIsLoading(false);
         window.clearTimeout(timerRef.current);
