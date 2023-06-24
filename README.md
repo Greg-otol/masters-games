@@ -2,6 +2,8 @@
 
 * Project developed in React and Typescript
 
+* Test url: https://masters-games.vercel.app/
+
 ## After downloading or cloning the project, install the dependencies:
 
 Assuming that NodeJS is installed on the machine, run the command:
