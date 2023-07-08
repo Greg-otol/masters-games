@@ -1,6 +1,8 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Home } from "../pages/home/home";
 import { ServerErro } from "../components/erro/serverErro";
+import { Register } from "../pages/register/register";
+import { Login } from "../pages/login/login";
 
 enum MessageErro {
   ERRO_SERVER = "O servidor fahou em responder, tente recarregar a página!",
@@ -11,7 +13,10 @@ enum MessageErro {
 export function AppRoutes() {
   return (
     <Routes>
+      <Route path="/auth" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/" element={<Home />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
       <Route
         path="/server-erro"
         element={<ServerErro value={MessageErro.ERRO_SERVER} />}
