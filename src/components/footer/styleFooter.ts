@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../styleGlobal";
 
 export const CopyRight = styled.div`
   display: flex;
@@ -6,9 +7,9 @@ export const CopyRight = styled.div`
   height: 10vh;
   align-items: center;
   justify-content: center;
-  color: rgb(220, 220, 220);
+  color: ${theme.colors.secondary};
   font-size: 18px;
   text-align: center;
-  background-color: rgba(172, 0, 0, 0.8);
+  background-color: ${theme.colors.primary};
   margin-top: auto;
 `;

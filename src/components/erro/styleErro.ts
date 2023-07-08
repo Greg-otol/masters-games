@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../styleGlobal";
 
 export const ErroContainer = styled.div`
   display: flex;
@@ -20,22 +21,16 @@ export const ErroImg = styled.img`
 `;
 
 export const ErroTitle = styled.h2`
-  color: rgb(40, 40, 40);
+  color: ${theme.colors.tertiary};
   padding: 20px;
 `;
 
 export const ErroButton = styled.button`
+  background-color: ${theme.colors.primary};
   padding: 20px;
-  color: rgb(40, 40, 40);
+  color: ${theme.colors.secondary};
   font-size: 20px;
-  border: 2px solid rgb(172, 0, 0);
+  border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.8s ease-out;
-
-  &:hover {
-    background: rgba(172, 0, 0, 0.8);
-    color: rgb(250, 250, 250);
-    border: 2px solid rgba(0, 0, 0, 0);
-  }
 `;

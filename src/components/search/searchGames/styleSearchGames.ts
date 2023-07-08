@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import search from "../../../assets/img/search.png";
+import { theme } from "../../../styleGlobal";
 
 export const SearchContainer = styled.div`
   display: flex;
@@ -34,5 +35,5 @@ export const InputSearch = styled.input`
   font-size: 18px;
   outline: none;
   border-radius: 5px;
-  border: 1px solid rgb(172, 0, 0);
+  border: 1px solid ${theme.colors.primary};
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../styleGlobal";
 
 export const ContainerOption = styled.div`
   display: flex;
@@ -9,8 +10,8 @@ export const ContainerOption = styled.div`
 export const OptionSelect = styled.select`
   height: 40px;
   font-size: 18px;
-  color: rgb(60, 60, 60);
-  border: 1px solid rgb(172, 0, 0);
+  color: ${theme.colors.tertiary};
+  border: 1px solid ${theme.colors.primary};
   border-radius: 5px;
   outline: none;
   cursor: pointer;
@@ -19,5 +20,5 @@ export const OptionSelect = styled.select`
 
 export const Options = styled.option`
   text-align: center;
-  background-color: rgba(172, 0, 0, 0.6);
+  background-color: ${theme.colors.primary};
 `;

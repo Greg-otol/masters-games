@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { theme } from "../../styleGlobal";
 
 export const LoadingContainer = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ export const LoadingDiv = styled.div`
   animation: ${Rotate} 1s infinite;
   border: 6px solid #e5e5e5;
   border-radius: 50%;
-  border-top-color: rgb(172, 0, 0);
+  border-top-color: ${theme.colors.primary};
   height: 100px;
   width: 100px;
   z-index: 2;
