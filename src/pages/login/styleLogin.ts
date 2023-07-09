@@ -16,7 +16,7 @@ export const LoginImg = styled.img`
 export const LoginTitle = styled.h2`
   padding: 20px;
   text-align: center;
-  color: ${theme.colors.tertiary};
+  color: ${theme.colors.secondary};
 `;
 
 export const LoginForm = styled.form`
@@ -33,20 +33,23 @@ export const LoginForm = styled.form`
 
 export const LoginLabel = styled.label`
   width: 80%;
-  color: ${theme.colors.tertiary};
+  color: ${theme.colors.secondary};
   font-weight: bold;
 `;
 
 export const LoginInput = styled.input`
   width: 80%;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 5px;
   padding-left: 10px;
-  border: 1px solid ${theme.colors.primary};
+  border: 1px solid ${theme.colors.secondary};
   outline: none;
+  font-size: 16px;
+  color: ${theme.colors.secondary};
 
   &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-box-shadow: 0 0 0px 1000px #242222 inset;
+    -webkit-text-fill-color: #f0f0f0 !important;
   }
 `;
 
@@ -56,10 +59,16 @@ export const LoginButton = styled.button`
   font-size: 20px;
   color: ${theme.colors.secondary};
   margin: 10px 0 5px 0;
-  background-color: ${theme.colors.primary};
+  background-color: ${theme.colors.tertiary};
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
+
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    box-shadow: 1px 1px 5px 2px ${theme.colors.secondary};
+  }
 `;
 
 export const LoginDiv = styled.div`
@@ -77,6 +86,6 @@ export const LoginDiv = styled.div`
 
 export const LoginP = styled.p`
   text-decoration: none;
-  color: ${theme.colors.tertiary};
+  color: ${theme.colors.secondary};
   font-weight: bold;
 `;

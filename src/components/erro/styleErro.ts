@@ -12,11 +12,11 @@ export const ErroContainer = styled.div`
 `;
 
 export const ErroImg = styled.img`
-  width: 50%;
+  width: 20%;
   margin-bottom: 20px;
 
   @media (max-width: 760px) {
-    width: 80%;
+    width: 50%;
   }
 `;
 
