@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
+import styled from "styled-components";
 import { theme } from "../../styleGlobal";
 
 export const HomeContainer = styled.div`
