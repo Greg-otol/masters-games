@@ -10,6 +10,7 @@ export const HeaderContainer = styled.div`
   background-color: ${theme.colors.primary};
   padding-top: 20px;
   text-align: center;
+  z-index: 999;
 `;
 
 export const HeaderDiv = styled.div`

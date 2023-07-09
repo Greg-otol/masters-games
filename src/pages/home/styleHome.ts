@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { theme } from "../../styleGlobal";
 
 export const HomeContainer = styled.div`
@@ -36,13 +36,35 @@ export const Cards = styled.div`
   }
 `;
 
-export const Card = styled.div`
+const shrinkAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
+
+export const Card = styled.div<{ isShrunk: boolean }>`
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
   border: 1px solid ${theme.colors.primary};
   border-radius: 5px;
+
+  
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  ${({ isShrunk }) =>
+    isShrunk &&
+    css`
+      animation: ${shrinkAnimation} 0.6s ease-in-out;
+    `}
 `;
 
 export const Title = styled.h2`

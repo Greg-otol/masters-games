@@ -52,6 +52,7 @@ export function Home() {
   const [showFavorites, setShowFavorites] = useState(false);
   const [ratings, setRatings] = useState<{ [id: string]: number }>({});
   const [sortByRating, setSortByRating] = useState<boolean>(false);
+  const [shrunkCards, setShrunkCards] = useState<number[]>([]);
 
   useEffect(() => {
     const loadGames = async () => {
@@ -157,6 +158,14 @@ export function Home() {
           });
           setFavorites(favorites.filter((favorite) => favorite.id !== game.id));
         } else {
+          if (shrunkCards.includes(game.id)) {
+            setShrunkCards((prevCards) =>
+              prevCards.filter((cardId) => cardId !== game.id)
+            );
+          } else {
+            setShrunkCards((prevCards) => [...prevCards, game.id]);
+          }
+
           const favoriteGame = { ...game };
           const favoriteDoc = doc(collection(firestore, "favorites"));
           await setDoc(favoriteDoc, favoriteGame);
@@ -289,7 +298,7 @@ export function Home() {
         <Cards>
           {filteredGames.map((game) => {
             return (
-              <Card key={game.id}>
+              <Card key={game.id} isShrunk={shrunkCards.includes(game.id)}>
                 <DivStarFavorite>
                   <Favorities
                     onClick={() => handleFavorite(game)}
