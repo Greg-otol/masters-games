@@ -10,6 +10,7 @@ import {
   HomeP,
   HomeSearchContainer,
   OrdersButton,
+  OrdersContainer,
   OrdersDiv,
   Star,
   StarDiv,
@@ -259,20 +260,23 @@ export function Home() {
       ) : (
         <UserP>Usuário não logado</UserP>
       )}
-      <HomeSearchContainer>
-        <SearchGames value={search} handleSearchValue={changeSearchGames} />
-        <GenrerSelect valueMap={genre} handleSearchValue={changeSearchGenre} />
-      </HomeSearchContainer>
-      <OrdersDiv>
-        <OrdersButton onClick={handleToggleFavorites}>
-          {showFavorites ? "Mostrar Todos" : "Mostrar Favoritos"}
-        </OrdersButton>
-        <OrdersButton onClick={handleSortByRating}>
-          {sortByRating
-            ? "Ordenar por menores avaliações"
-            : "Ordenar por maiores avaliações"}
-        </OrdersButton>
-      </OrdersDiv>
+      <OrdersContainer>
+        <HomeSearchContainer>
+          <SearchGames value={search} handleSearchValue={changeSearchGames} />
+          <GenrerSelect
+            valueMap={genre}
+            handleSearchValue={changeSearchGenre}
+          />
+        </HomeSearchContainer>
+        <OrdersDiv>
+          <OrdersButton onClick={handleToggleFavorites}>
+            {showFavorites ? "Mostrar Todos" : "Mostrar Favoritos"}
+          </OrdersButton>
+          <OrdersButton onClick={handleSortByRating}>
+            {sortByRating ? "Menores avaliações" : "Maiores avaliações"}
+          </OrdersButton>
+        </OrdersDiv>
+      </OrdersContainer>
       {isLoading ? (
         <Loading />
       ) : filteredGames.length === 0 ? (

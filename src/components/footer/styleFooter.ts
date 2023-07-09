@@ -10,6 +10,5 @@ export const CopyRight = styled.div`
   color: ${theme.colors.secondary};
   font-size: 18px;
   text-align: center;
-  background-color: ${theme.colors.primary};
   margin-top: auto;
 `;

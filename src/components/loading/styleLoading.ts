@@ -17,9 +17,9 @@ export const LoadingDiv = styled.div`
   position: fixed;
   top: 300px;
   animation: ${Rotate} 1s infinite;
-  border: 6px solid #e5e5e5;
+  border: 6px solid ${theme.colors.tertiary};
   border-radius: 50%;
-  border-top-color: ${theme.colors.primary};
+  border-top-color: ${theme.colors.secondary};
   height: 100px;
   width: 100px;
   z-index: 2;

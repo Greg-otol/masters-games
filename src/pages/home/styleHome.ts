@@ -14,11 +14,11 @@ export const HomeSearchContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  padding: 20px 50px 0 50px;
+  padding: 20px 5px 0 20px;
   gap: 10px;
 
   @media (max-width: 700px) {
-    padding: 20px 10px 0 10px;
+    padding: 10px 10px 0 10px;
   }
 `;
 
@@ -50,7 +50,7 @@ export const Card = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 10px;
-  border: 1px solid ${theme.colors.primary};
+  box-shadow: 1px 1px 5px 2px ${theme.colors.secondary};
   border-radius: 5px;
 
   animation: ${slideIn} 0.9s ease-in-out;
@@ -58,7 +58,7 @@ export const Card = styled.div`
 
 export const Title = styled.h2`
   text-align: center;
-  color: ${theme.colors.tertiary};
+  color: ${theme.colors.secondary};
 `;
 
 export const HomeImg = styled.img`
@@ -69,49 +69,69 @@ export const HomeGenre = styled.p`
   font-weight: bold;
   margin-top: 5px;
   text-align: center;
-  color: ${theme.colors.tertiary};
+  color: ${theme.colors.secondary};
 `;
 
 export const HomeDeveloped = styled.p`
   font-weight: bold;
   margin-top: 5px;
   text-align: center;
-  color: ${theme.colors.tertiary};
+  color: ${theme.colors.secondary};
 `;
 
 export const HomeP = styled.p`
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  color: ${theme.colors.primary};
+  color: ${theme.colors.secondary};
   padding-top: 150px;
+`;
+
+export const OrdersContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 10px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 export const OrdersDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  width: 60%;
+  width: 100%;
+  padding: 20px 20px 0 5px;
   gap: 10px;
 
   @media (max-width: 700px) {
-    flex-direction: column;
+    padding: 20px 10px 0 10px;
     width: 100%;
-    gap: 0;
+    gap: 10px;
+  }
+
+  @media (max-width: 340px) {
+    flex-direction: column;
   }
 `;
 
 export const OrdersButton = styled.button`
-  width: 80%;
+  width: 100%;
   height: 40px;
   font-size: 16px;
   color: ${theme.colors.secondary};
-  margin: 10px 0 5px 0;
-  background-color: ${theme.colors.primary};
+  background-color: ${theme.colors.tertiary};
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
+
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    box-shadow: 1px 1px 5px 2px ${theme.colors.secondary};
+  }
 `;
 
 export const DivStarFavorite = styled.div`
@@ -145,7 +165,7 @@ export const Star = styled.span<StarProps>`
 `;
 
 export const UserP = styled.p`
-  color: ${theme.colors.primary};
+  color: ${theme.colors.secondary};
   text-align: center;
   padding-top: 10px;
 `;

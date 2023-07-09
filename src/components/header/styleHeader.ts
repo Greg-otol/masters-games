@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: ${theme.colors.primary};
+  
   padding-top: 20px;
   text-align: center;
   z-index: 999;

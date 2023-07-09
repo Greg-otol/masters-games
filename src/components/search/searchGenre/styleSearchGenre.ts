@@ -10,8 +10,8 @@ export const ContainerOption = styled.div`
 export const OptionSelect = styled.select`
   height: 40px;
   font-size: 18px;
-  color: ${theme.colors.tertiary};
-  border: 1px solid ${theme.colors.primary};
+  color: ${theme.colors.secondary};
+  border: 1px solid ${theme.colors.secondary};
   border-radius: 5px;
   outline: none;
   cursor: pointer;
@@ -20,5 +20,5 @@ export const OptionSelect = styled.select`
 
 export const Options = styled.option`
   text-align: center;
-  background-color: ${theme.colors.primary};
+  background-color: ${theme.colors.tertiary};
 `;

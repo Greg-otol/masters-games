@@ -21,16 +21,21 @@ export const ErroImg = styled.img`
 `;
 
 export const ErroTitle = styled.h2`
-  color: ${theme.colors.tertiary};
+  color: ${theme.colors.secondary};
   padding: 20px;
 `;
 
 export const ErroButton = styled.button`
-  background-color: ${theme.colors.primary};
+  background-color: ${theme.colors.tertiary};
   padding: 20px;
   color: ${theme.colors.secondary};
   font-size: 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    box-shadow: 1px 1px 5px 2px ${theme.colors.secondary};
+  }
 `;
