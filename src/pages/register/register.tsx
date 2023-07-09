@@ -21,7 +21,7 @@ export function Register() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword, loading] =
     useCreateUserWithEmailAndPassword(auth);
 
   function handleSignOut(event: React.ChangeEvent<HTMLInputElement> | any) {

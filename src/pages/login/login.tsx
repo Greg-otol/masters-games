@@ -23,7 +23,7 @@ export function Login() {
 
   const navigate = useNavigate();
 
-  const [signInWithEmailAndPassword, user, loading, error] =
+  const [signInWithEmailAndPassword, loading] =
     useSignInWithEmailAndPassword(auth);
 
   function handleSignIn(event: React.ChangeEvent<HTMLInputElement> | any) {
