@@ -20,6 +20,7 @@ export function Header() {
     const auth = getAuth();
     await signOut(auth);
     navigate("/");
+    window.location.reload();
   };
 
   return (
