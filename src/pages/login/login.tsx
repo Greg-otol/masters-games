@@ -1,5 +1,4 @@
 import {
-  LoginA,
   LoginButton,
   LoginContainer,
   LoginDiv,
@@ -67,13 +66,11 @@ export function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <LoginA href="#">Esqueceu sua senha ?</LoginA>
-
         <LoginButton className="button" onClick={handleSignIn}>
           Entrar
         </LoginButton>
         <LoginDiv>
-          <LoginP>Você não tem uma conta?</LoginP>
+          <LoginP>Não tem uma conta?</LoginP>
           <Link to="/register">
             <LoginP>Clique aqui</LoginP>
           </Link>

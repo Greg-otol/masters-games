@@ -52,7 +52,7 @@ export function Register() {
           type="text"
           name="email"
           id="email"
-          placeholder="Digite seu e-mail"
+          placeholder="Digite um e-mail"
           onChange={(e) => setEmail(e.target.value)}
         />
 
@@ -61,7 +61,7 @@ export function Register() {
           type="password"
           name="password"
           id="password"
-          placeholder="Digite sua senha"
+          placeholder="Digite uma senha"
           onChange={(e) => setPassword(e.target.value)}
         />
 
@@ -69,7 +69,7 @@ export function Register() {
           Cadastrar
         </RegisterButton>
         <RegisterDiv>
-          <RegisterP>Você já tem uma conta?</RegisterP>
+          <RegisterP>Já tem uma conta?</RegisterP>
           <Link to="/auth">Acesse sua conta aqui</Link>
         </RegisterDiv>
       </RegisterForm>
