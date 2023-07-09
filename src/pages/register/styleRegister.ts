@@ -34,6 +34,7 @@ export const RegisterForm = styled.form`
 export const RegisterLabel = styled.label`
   width: 80%;
   color: ${theme.colors.tertiary};
+  font-weight: bold;
 `;
 
 export const RegisterInput = styled.input`
@@ -47,16 +48,6 @@ export const RegisterInput = styled.input`
   &:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
   }
-`;
-
-export const RegisterA = styled.a`
-    width: 80%;
-    text-decoration: none;
-    color: ${theme.colors.tertiary};
-    cursor: pointer;
-    &:hover {
-        color: ${theme.colors.primary};
-    }
 `;
 
 export const RegisterButton = styled.button`
@@ -87,4 +78,5 @@ export const RegisterDiv = styled.div`
 export const RegisterP = styled.p`
   text-decoration: none;
   color: ${theme.colors.tertiary};
+  font-weight: bold;
 `;

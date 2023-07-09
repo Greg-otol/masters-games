@@ -70,7 +70,9 @@ export function Register() {
         </RegisterButton>
         <RegisterDiv>
           <RegisterP>Já tem uma conta?</RegisterP>
-          <Link to="/auth">Acesse sua conta aqui</Link>
+          <Link to="/auth">
+            <RegisterP>Acesse sua conta aqui</RegisterP>
+          </Link>
         </RegisterDiv>
       </RegisterForm>
     </RegisterContainer>
