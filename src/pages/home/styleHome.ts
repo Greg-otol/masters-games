@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { theme } from "../../styleGlobal";
 
 export const HomeContainer = styled.div`
@@ -36,6 +36,15 @@ export const Cards = styled.div`
   }
 `;
 
+const slideIn = keyframes`
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
+
 export const Card = styled.div`
   display: flex;
   justify-content: center;
@@ -43,6 +52,8 @@ export const Card = styled.div`
   padding: 10px;
   border: 1px solid ${theme.colors.primary};
   border-radius: 5px;
+
+  animation: ${slideIn} 0.9s ease-in-out;
 `;
 
 export const Title = styled.h2`
